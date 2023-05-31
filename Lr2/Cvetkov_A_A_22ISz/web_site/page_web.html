@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lab_2_IIKT">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Cvetkov Andrey 22-ISz">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+<script src=header.js></script>
+<table class=header>
+    <tr>
+        <td class=header><img src=logo_white_text.png height=80px width=150px></td><td id=a class=header onmouseover="headmouseon('#a')" onmouseout="headmouseoff('#a')"><a href=index.html title="Главная страница сайта">Главная</a></td><td id=b class="header" onmouseover="headmouseon('#b')" onmouseout="headmouseoff('#b')"><a href=page_html.html>HTML</a></td><td id=c class="header" onmouseover="headmouseon('#c')" onmouseout="headmouseoff('#c')"><a href=page_css.html>CSS</a></td><td id=d class="header" onmouseover="headmouseon('#d')" onmouseout="headmouseoff('#d')"><a href=page_java.html>JavaScript</a></td><td id=f class="header" onmouseover="headmouseon('#f')" onmouseout="headmouseoff('#f')"><a href=page_web.html>Web сервер</a></td><td class="header"><img src=logo_white_text.png height=80px width=150px></td>
+    </tr>
+</table>
+</header>
+<div class=body>
+<h1>Web Server</h1>
+Для того чтобы поделиться нашим сайтом с другими мы конечно можем принести их на флешке,<br>
+но проще и удобнее использовать специальную программу веб-сервер.<br>
+Он предоставляет доступ к файлам сайта всем пользователям сети.<br>
+Cуществует множество различных веб-сервером. На данный момент два самых популярных это NGINX и APACHE.<br>
+Современные сайты как правило построены на основе так называемой архитектуры LAMP. Linux Apache Mysql PHP.<br>
+Тоесть используют ОС linux на которой располагается веб сервер и СУБД,<br>
+а для создания структуры сайта и выполнения сложных функций используют язык программирования PHP.<br>
+Apache и Nginx — 2 самых широко распространенных веб-сервера с открытым исходным кодом в мире.<br>
+Вместе они обслуживают более 50% трафика во всем интернете. Оба решения способны работать с разнообразными рабочими нагрузками и взаимодействовать с другими приложениями для реализации полного вебстека.<br>
+<h2>Apache</h2>
+<br>
+Apache HTTP Server был разработан Робертом Маккулом в 1995 году, а с 1999 года разрабатывается под управлением Apache Software Foundation — фонда развития программного обеспечения Apache. Так как HTTP сервер это первый и самый популярный проект фонда его обычно называют просто Apache.<br>
+Веб-север Apache был самым популярным веб-сервером в интернете с 1996 года. Благодаря его популярности у Apache сильная документация и интеграция со сторонним софтом.<br>
+<br>
+Администраторы часто выбирают Apache из-за его гибкости, мощности и широкой распространенности. Он может быть расширен с помощью системы динамически загружаемых модулей и исполнять программы на большом количестве интерпретируемых языков программирования без использования внешнего программного обеспечения.<br>
+<br>
+<h2>Nginx</h2>
+<br>
+В 2002 году Игорь Сысоев начал работу над Nginx для того чтобы решить проблему C10K — требование к ПО работать с 10 тысячами одновременных соединений. Первый публичный релиз был выпущен в 2004 году, поставленная цель была достигнута благодаря асинхронной event-driven архитектуре.<br>
+
+Nginx начал набирать популярность с момента релиза благодаря своей легковесности (light-weight resource utilization) и возможности легко масштабироваться на минимальном железе. Nginx превосходен при отдаче статического контента и спроектирован так, чтобы передавать динамические запросы другому ПО предназначенному для их обработки.<br>
+
+Администраторы часто выбирают Nginx из-за его эффективного потребления ресурсов и отзывчивости под нагрузкой, а также из-за возможности использовать его и как веб-сервер, и как прокси.<br>
+
+</div>
+<footer>
+Сайт демонстрирует основной функционал HTML+CSS+JavaScript<br>Цветков Андрей Александрович<br>группа 22-ИСз<br>2023г.<br>
+</footer>
+</body>
+</html>

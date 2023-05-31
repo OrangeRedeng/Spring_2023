@@ -1,0 +1,1 @@
+Text to test how git add works.
