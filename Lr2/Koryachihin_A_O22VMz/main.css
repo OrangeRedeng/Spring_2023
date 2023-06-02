@@ -1,0 +1,160 @@
+#msg  {
+    color: white;
+} 
+
+
+html {
+
+    background-image: url("https://kartinkin.net/pics/uploads/posts/2022-08/thumbs/1661451714_34-kartinkin-net-p-antichnie-oboi-na-rabochii-stol-krasivo-47.jpg");
+    
+    background-repeat: no-repeat;
+    
+    background-position: center center;
+    
+    background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+    
+    -moz-background-size: cover;
+    
+    -o-background-size: cover;
+    
+    background-size: cover;
+    
+    }
+
+ .site-header {height:  45px;
+    text-align: center;
+    background-color: rgb(226, 130, 40);
+
+}
+
+    .wrapper {
+        width:  90%;
+        min-height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .content {
+        padding: 50px 0;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+
+    .tabs {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .tabs__Items {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .tabs__Item {
+        flex: 0 1 20%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: uppercase;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .tabs__body {
+        
+    }
+
+    .tabs__block {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        display: none;
+    }
+
+    .tabs__block:nth-child(1) {
+        background-color: rgb(177, 177, 248);
+    }
+    
+    .tabs__block:nth-child(2) {
+        background-color: rgb(255, 109, 158)
+    }
+
+    .tabs__block:nth-child(3) {
+        color: white;
+        background-color: rgb(54, 54, 255)
+    }
+    
+    .tabs__block:nth-child(4) {
+        color: white;
+        background-color: rgb(4, 4, 54)
+    }
+
+    .tabs__block:nth-child(5) {
+        background-color: rgb(247, 247, 247)
+    }
+
+    .tabs__block:nth-child(6) {
+        color: white;
+        background-color: rgb(235, 81, 10)
+    }
+
+    .tabs__block:nth-child(7) {
+        background-color: rgb(236, 233, 36)
+    }
+
+    .tabs__block:nth-child(8) {
+        background-color: rgb(62, 230, 29)
+    }
+
+    .tabs__block:nth-child(9) {
+        background-color: rgb(238, 57, 142)
+    }
+    
+    .tabs__block:nth-child(10) {
+        background-color: rgb(252, 38, 38)
+    }
+
+    .tabs__block:nth-child(11) {
+        background-color: rgb(223, 209, 85)
+    }
+
+    .tabs__block:nth-child(12) {
+        background-color: rgb(251, 255, 0)
+    }
+
+    .tabs__block:nth-child(13) {
+        color: white;
+        background-color: rgb(139, 4, 4)
+    }
+
+    .tabs__block:nth-child(14) {
+        background-color: rgb(211, 137, 41)
+    }
+
+    .tabs__block:nth-child(15) {
+        color: white;
+        background-color: rgba(63, 63, 167);
+    }
+
+    .tabs__block:target {
+        display: block;
+    }
+    
+    .Bot{
+        background-color: rgb(226, 130, 40);
+        height: 30px;
+    }
+    
+    .leftbottom {
+        width: 80%;
+        float: left;
+    }
+
+    .rightbottom {
+        width: 15%;
+        float: right;
+        padding: 35px 2.5% 1000px;
+    }
