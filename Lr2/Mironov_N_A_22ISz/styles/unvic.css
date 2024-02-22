@@ -1,0 +1,13 @@
+p {
+    color: green;
+  }
+  h1 {
+    margin: 0;
+    padding: 18px 0;
+    color: #4320066f;
+    text-shadow: 3px 3px 1px black;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  html {
+    background-color: #8deec9;
+  }
