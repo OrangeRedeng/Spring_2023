@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lab_2_IIKT">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Cvetkov Andrey 22-ISz">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+<script src=header.js></script>
+<table class=header>
+    <tr>
+        <td class=header><img src=logo_white_text.png height=80px width=150px></td><td id=a class=header onmouseover="headmouseon('#a')" onmouseout="headmouseoff('#a')"><a href=index.html title="Главная страница сайта">Главная</a></td><td id=b class="header" onmouseover="headmouseon('#b')" onmouseout="headmouseoff('#b')"><a href=page_html.html>HTML</a></td><td id=c class="header" onmouseover="headmouseon('#c')" onmouseout="headmouseoff('#c')"><a href=page_css.html>CSS</a></td><td id=d class="header" onmouseover="headmouseon('#d')" onmouseout="headmouseoff('#d')"><a href=page_java.html>JavaScript</a></td><td id=f class="header" onmouseover="headmouseon('#f')" onmouseout="headmouseoff('#f')"><a href=page_web.html>Web сервер</a></td><td class="header"><img src=logo_white_text.png height=80px width=150px></td>
+    </tr>
+</table>
+</header>
+<div class=body>
+<h1>Структура страниц</h1>
+<p align=left>Все элементы располагаются внутри тегов &lt;html&gt; и &lt;body&gt;.<br>
+На каждой странице имеются следующие элементы:<br>
+1. &lt;header&gt; или панель навигации<br>
+2. блок &lt;div&gt; по центру, в котором располагается основная информация.<br>
+3. &lt;footer&gt; или подвал, который содержит вспомогательную информацию.<br></p>
+<hr>
+<h2>HEADER</h2>
+В верхней части страницы расположена панель навигации или header.<br>
+Разметка в headerе выполнена таблицей состоящей из 1 строки (тег &lt;tr&gt;) и 7 столбцов (тег &lt;td&gt;)<br>
+в крайних ячейках я разместил логотип нашего вуза. а в остальных находятся ссылки на другие страницы этого сайта.<br>
+Header "прикреплен" к верхней части страницы и не двигается при крокрутке страниц.<br>
+<hr>
+<h2> DIV </h2>
+<p text-align=left>Далее идет блок с информацией. В нем и содержится данный текст.<br>
+Сам текст также размечен с использованием различных HTML тегов. 
+Например заголовки используют теги &lt;h1&gt; и &lt;h2&gt;, всего их существует 6.</p>
+<h1>Заголовок</h1><h2>Заголовок</h2><h3>Заголовок</h3><h4>Заголовок</h4><h5>Заголовок</h5><h6>Заголовок</h6>
+Перенос текста на новую строку<br> можно осуществлять с<br> использованием тега &lt;br&gt;<br>
+<pre>или можно разместить текст внутри тега &lt;pre&gt;
+тогда,
+разметка
+текста сохранится</pre>
+<hr>
+Изображения вставляются в тег &lt;img&gt;<br>
+<img src="logo.png" height=100px width=100px><img src="logo_white.png" height=100px width=100px style="background:black"><br>
+Таблицы используют тег &lt;table&gt; внутри которого создается структура с использованием тегов &lt;tr&gt;(строка) и &lt;td&gt;(столбец)
+<table border="1px solid black">
+
+    <tr>
+        <td>1.1</td><td>1.2</td><td>1.3</td><td>1.4</td><td>1.5</td>
+    </tr>
+    <tr>
+        <td>2.1</td><td>2.2</td><td>2.3</td><td>2.4</td><td>2.5</td>
+    </tr>
+    <tr>
+        <td>3.1</td><td>3.2</td><td>3.3</td><td>3.4</td><td>3.5</td>
+    </tr>
+    <tr>
+        <td>4.1</td><td>4.2</td><td>4.3</td><td>4.4</td><td>4.5</td>
+    </tr>
+    <tr>
+        <td>5.1</td><td>5.2</td><td>5.3</td><td>5.4</td><td>5.5</td>
+    </tr>
+</table>
+визуальное оформление таблицы можно настраивать указывая необходимые свойства в самом теге &lt;table&gt;, либо использую файл.css
+<table border="2px solid black" width=100% height=150px>
+
+    <tr>
+        <td style="border:2px solid green">1.1</td><td>1.2</td><td colspan=3>1.3</td>
+    </tr>
+    <tr>
+        <td>2.1</td><td>2.2</td><td style="text-align:right">2.3</td><td style="border:1px none">2.4</td><td>2.5</td>
+    </tr>
+    <tr>
+        <td>3.1</td><td>3.2</td><td>3.3</td><td style="border:5px solid red">3.4</td><td>3.5</td>
+    </tr>
+    <tr>
+        <td colspan=2>4.1</td><td>4.2</td><td style="text-align:left">4.3</td><td>4.4</td>
+    </tr>
+    <tr>
+        <td>5.1</td><td style="border:3px solid black">5.2</td><td style="background:blue">5.3</td><td>5.4</td><td>5.5</td>
+    </tr>
+</table>
+</div>
+<footer>
+Сайт демонстрирует основной функционал HTML+CSS+JavaScript<br>Цветков Андрей Александрович<br>группа 22-ИСз<br>2023г.<br>
+</footer>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Text to test how git add works.
+More text to test how commit works.

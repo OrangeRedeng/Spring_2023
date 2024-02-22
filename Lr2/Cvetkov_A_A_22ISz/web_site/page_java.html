@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lab_2_IIKT">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="Cvetkov Andrey 22-ISz">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+<script src="jscript.js"></script>
+</head>
+<body>
+<header>
+<script src=header.js></script>
+<table class=header>
+    <tr>
+        <td class=header><img src=logo_white_text.png height=80px width=150px></td><td id=a class=header onmouseover="headmouseon('#a')" onmouseout="headmouseoff('#a')"><a href=index.html title="Главная страница сайта">Главная</a></td><td id=b class="header" onmouseover="headmouseon('#b')" onmouseout="headmouseoff('#b')"><a href=page_html.html>HTML</a></td><td id=c class="header" onmouseover="headmouseon('#c')" onmouseout="headmouseoff('#c')"><a href=page_css.html>CSS</a></td><td id=d class="header" onmouseover="headmouseon('#d')" onmouseout="headmouseoff('#d')"><a href=page_java.html>JavaScript</a></td><td id=f class="header" onmouseover="headmouseon('#f')" onmouseout="headmouseoff('#f')"><a href=page_web.html>Web сервер</a></td><td class="header"><img src=logo_white_text.png height=80px width=150px></td>
+    </tr>
+</table>
+</header>
+<div class=body>
+<h1>JavaScript</h1>
+Изначально JavaScript был создан, чтобы «сделать веб-страницы живыми».<br>
+
+Программы на этом языке называются скриптами. Они могут встраиваться в HTML и выполняться автоматически при загрузке веб-страницы.<br>
+
+Скрипты распространяются и выполняются, как простой текст. Им не нужна специальная подготовка или компиляция для запуска.<br>
+<h2>Что может JavaScript в браузере?</h2>
+
+Современный JavaScript – это «безопасный» язык программирования. Он не предоставляет низкоуровневый доступ к памяти или процессору, потому что изначально был создан для браузеров, не требующих этого.<br>
+В браузере для JavaScript доступно всё, что связано с манипулированием веб-страницами, взаимодействием с пользователем и веб-сервером.<br>
+<br>
+Например, в браузере JavaScript может:<br>
+<br>
+<p style="text-align:left">
+    Добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили.<br>
+    Реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш.<br>
+    Отправлять сетевые запросы на удалённые сервера, скачивать и загружать файлы (технологии AJAX и COMET).<br>
+    Получать и устанавливать куки, задавать вопросы посетителю, показывать сообщения.<br>
+    Запоминать данные на стороне клиента («local storage»).<br>
+</p>
+
+<h2>Чего НЕ может JavaScript в браузере?</h2>
+
+Возможности JavaScript в браузере ограничены ради безопасности пользователя. Цель заключается в предотвращении доступа недобросовестной веб-страницы к личной информации или нанесения ущерба данным пользователя.<br>
+<br>
+Примеры таких ограничений включают в себя:<br>
+<br>
+<p style="text-align:left">
+    JavaScript на веб-странице не может читать/записывать произвольные файлы на жёстком диске, копировать их или запускать программы. Он не имеет прямого доступа к системным функциям ОС.<br>
+    Различные окна/вкладки не знают друг о друге. Иногда одно окно, используя JavaScript, открывает другое окно. Но даже в этом случае JavaScript с одной страницы не имеет доступа к другой, если они пришли с разных сайтов.<br>
+    JavaScript может легко взаимодействовать с сервером, с которого пришла текущая страница. Но его способность получать данные с других сайтов/доменов ограничена.<br>
+</p>
+<h2>Пара примеров JavaScript</h2>
+<div id="div1" class=script onmouseover=divbackch("#div1") onmouseout=divback("#div1")>Этот элемент меняет свой цвет при наведении на него мышкой.</div>
+<div id="div2" class=script onclick=divbackch("#div2") onmouseout=divback("#div2")>Этот элемент меняет свой цвет если по нему кликнуть.</div>
+<br>
+При нажатии на кнопки будут выполняться простейшие функции с числом.<br>
+При загрузке страницы переменная равна 0.<br>
+<br>
+<button onclick="plus1()">+1</button>
+<button onclick="minus1()">-1</button>
+<br>
+<button onclick="pro5()">*5</button>
+<button onclick="div5()">/5</button>
+<br>
+<button onclick="reset()">Сброс</button>
+<br>
+С помощью скрипта реализована задача из первой лабораторной работы:<br>
+<p style="text-align:left">
+Введите в поле число в двоичной форме.<br>
+Нажмите кнопку справа от поля.<br>
+Появится окно со значением этого числа в десятичной форме.<br>
+</p>
+<br>
+<input id=in type="text" name="Введите число в двоичной форме" value="" style="width:50%">
+<button onclick="lab1()">Преобразовать число в десятичную систему</button>
+</div>
+<footer>
+Сайт демонстрирует основной функционал HTML+CSS+JavaScript<br>Цветков Андрей Александрович<br>группа 22-ИСз<br>2023г.<br>
+</footer>
+</body>
+</html>
