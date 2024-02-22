@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" class="active">CSS</a></li>
+          <li><a href="js.html">JS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Введение</h2>
+        <p>
+          CSS - это язык стилей, который используется для задания внешнего вида
+          веб-страницы. С помощью CSS можно изменять цвета, шрифты, размеры и
+          расположение элементов на странице, а также создавать анимации и
+          эффекты переходов.
+        </p>
+      </section>
+      <section>
+        <h2>Селекторы CSS</h2>
+        <p>
+          Селекторы CSS позволяют выбирать элементы на странице и задавать им
+          стили. Например, для задания стиля заголовку первого уровня можно
+          использовать селектор "h1", а для задания стиля элементам с классом
+          "button" - селектор ".button".
+        </p>
+        <p>Ниже приведен список некоторых типов селекторов CSS:</p>
+        <ul>
+          <li><code>элемент</code> - выбирает все элементы данного типа</li>
+          <li><code>.класс</code> - выбирает все элементы с данным классом</li>
+          <li>
+            <code>#идентификатор</code> - выбирает элемент с данным
+            идентификатором
+          </li>
+          <li>
+            <code>[атрибут]</code> - выбирает все элементы, у которых есть
+            данный атрибут
+          </li>
+          <li>
+            <code>:псевдокласс</code> - выбирает элементы в определенном
+            состоянии (например, <code>:hover</code> выбирает элемент при
+            наведении на него мыши)
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Примеры стилей</h2>
+        <p>
+          Ниже приведены некоторые примеры использования CSS для стилизации
+          веб-страниц:
+        </p>
+        <h3>Изменение цвета текста</h3>
+        <p style="color: red">Этот текст будет красным цветом.</p>
+        <h3>Изменение размера текста</h3>
+        <p style="font-size: 24px">Этот текст будет иметь размер 24 пикселя.</p>
+        <h3>Добавление фона</h3>
+        <p style="background-color: yellow">
+          Этот текст будет иметь желтый фон.
+        </p>
+        <h3>Изменение шрифта</h3>
+        <p style="font-family: Arial, sans-serif">
+          Этот текст будет иметь шрифт Arial или аналогичный ему без засечек.
+        </p>
+        <h3>Создание границы</h3>
+        <p style="border: 1px solid black">
+          Этот текст будет иметь черную границу толщиной 1 пиксель.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright ©
+        <script src="public/js/currentYear.js"></script>
+        Все права защищены.
+      </p>
+    </footer>
+  </body>
+</html>

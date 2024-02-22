@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JS</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="js.html" class="active">JS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Введение</h2>
+        <p>
+          JavaScript (JS) — это мультипарадигмальный язык программирования,
+          используемый для создания веб-приложений и веб-сайтов. Он позволяет
+          создавать динамические эффекты, взаимодействовать с пользователем и
+          обрабатывать данные, введенные на странице.
+        </p>
+      </section>
+      <section>
+        <h2>Основы языка</h2>
+        <p>
+          JS поддерживает множество конструкций и методов для работы с данными и
+          элементами страницы. Вот некоторые из них:
+        </p>
+        <ul>
+          <li>переменные</li>
+          <li>условные операторы</li>
+          <li>циклы</li>
+          <li>массивы</li>
+          <li>функции</li>
+          <li>объекты</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Примеры кода</h2>
+        <p>Ниже приведены примеры кода на JavaScript:</p>
+        <pre><code>// Отобразить время на момент загрузки страницы в элементе с идентификатором #datetime
+let now = new Date();
+let datetimeElement = document.getElementById("datetime");
+datetimeElement.innerHTML = now.toLocaleString();</code></pre>
+        <div class="js-sandbox-container">
+          <p>Элемент #datetime</p>
+          <p id="datetime"></p>
+        </div>
+        <hr />
+        <pre><code>// Скрипт, который скрывает/показывает элемент при клике на кнопку:
+const toggleBtn = document.getElementById('toggle-btn')
+const text = document.getElementById('text')
+toggleBtn.addEventListener('click', () => {
+    text.hidden = !text.hidden
+});</code></pre>
+        <div class="js-sandbox-container">
+          <button id="toggle-btn">Показать/скрыть текст</button>
+          <p id="text">Пример текста для скрытия/отображения.</p>
+        </div>
+        <hr />
+        <pre><code>
+// Скрипт для кнопки, которая увеличивает счетчик на 1 при каждом нажатии:
+const counter = document.getElementById('counter');
+const button = document.getElementById('button');
+let count = 0;
+
+button.addEventListener('click', () => {
+    count++;
+    counter.textContent = `Счетчик: ${count}`;
+});</code></pre>
+        <div class="js-sandbox-container">
+          <div id="counter">Счетчик: 0</div>
+          <button id="button">Увеличить счетчик</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright ©
+        <script src="public/js/currentYear.js"></script>
+        Все права защищены.
+      </p>
+    </footer>
+    <script src="./public/js/showDatetime.js"></script>
+    <script src="./public/js/hideText.js"></script>
+    <script src="./public/js/counter.js"></script>
+  </body>
+</html>
