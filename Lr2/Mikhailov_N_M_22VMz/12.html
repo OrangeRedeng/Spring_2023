@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Супер сервис домашних заданий</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Супер сервис домашних заданий</h1>
+        <nav>
+            <ul>
+                <li><a href="#order" class="tab">Заказать</a></li>
+                <li><a href="#active" class="tab">Заказы</a></li>
+                <li><a href="#about" class="tab">О нас</a></li>
+                <li><a href="#contact" class="tab">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="order" class="tab-content">
+            <div class="content">
+                <h2>Заказать выполнение задания</h2>
+                <form id="orderForm">
+                    <label for="task">Ваше имя и описание задания:</label><br>
+                    <textarea id="task" name="task" rows="4" cols="50"></textarea><br>
+                    <label for="payment">Количество конфет для оплаты:</label><br>
+                    <input type="number" id="payment" name="payment" min="1" max="10"><br>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Я принимаю условия использования: одно задание - одна конфета. При необходимости выполнить задание быстрее - увеличьте оплату. Ваш порядок в очереди можете видеть во вкладке "Заказы"</label><br>
+                    <button type="submit" id="submitBtn" disabled>Заказать</button>
+                </form>
+            </div>
+        </section>
+        <section id="active" class="tab-content">
+            <div class="content">
+                <h2>Заказы</h2>
+                <ul id="activeOrders">
+                </ul>
+            </div>
+        </section>
+        <section id="about" class="tab-content">
+            <div class="content">
+				<div class="image-container">
+					<img src="about_us_image1.jpg" alt="О нас 1">
+					<p class="caption">Серёга - русский, лит-ра</p>
+				</div>
+				<div class="image-container">
+					<img src="about_us_image2.jpg" alt="О нас 2">
+					<p class="caption">Антоха - химия, биология</p>
+				</div>
+				<div class="image-container">
+					<img src="about_us_image3.jpg" alt="О нас 3">
+					<p class="caption">Димон - математика, физика</p>
+				</div>
+				<div class="image-container">
+					<img src="about_us_image4.jpg" alt="О нас 4">
+					<p class="caption">Ксюша - история, география</p>
+				</div>
+                <h2>О нас</h2>
+                <p>Мы - команда супер школьников, которые выполнят вам все домашние задания за конфеты! (Принимаем только хорошие конфеты!!!)</p>
+            </div>
+        </section>
+        <section id="contact" class="tab-content">
+            <div class="content">
+                <h2>Контакты</h2>
+                <p>Вы можете связаться с Серёгой по следующему адресу: dikiypacyan@mail.com или по телефону: 8-800-555-35-35</p>
+            </div>
+        </section>
+    </main>
+	<footer>
+        <p>&copy; 2024 Супер сервис домашних заданий</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
